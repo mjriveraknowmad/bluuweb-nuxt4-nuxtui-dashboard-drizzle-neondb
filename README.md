@@ -1,4 +1,4 @@
-# Nuxt4 NuxtUi Dashboard Drizzle NeonDb
+# Nuxt4 - NuxtUI - Drizzle ORM - Neon DB - nuxt-auth-utils
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -74,5 +74,8 @@ yarn preview
 # bun
 bun run preview
 ```
+## Enlaces
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [https://orm.drizzle.team/docs/tutorials/drizzle-with-neon](https://orm.drizzle.team/docs/tutorials/drizzle-with-neon). Aquí están los pasos iniciales seguidos.
+- [https://nuxt.com/modules/auth-utils](https://nuxt.com/modules/auth-utils)
+- [https://zod.dev/](https://zod.dev/)
