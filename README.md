@@ -77,5 +77,5 @@ bun run preview
 ## Enlaces
 
 - [https://orm.drizzle.team/docs/tutorials/drizzle-with-neon](https://orm.drizzle.team/docs/tutorials/drizzle-with-neon). Aquí están los pasos iniciales seguidos.
-- [https://nuxt.com/modules/auth-utils](https://nuxt.com/modules/auth-utils)
+- [https://nuxt.com/modules/auth-utils](https://nuxt.com/modules/auth-utils), para rear la sesión del usuario, generando una cookie de sesión cifrada segura que se enviará al cliente, con lo que podemos crear rutas protegidas que solo los usuarios autenticados pueden acceder, verificando la sesión en cada solicitud
 - [https://zod.dev/](https://zod.dev/)
