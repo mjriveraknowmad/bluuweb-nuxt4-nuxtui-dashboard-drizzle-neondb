@@ -75,6 +75,16 @@ yarn preview
 # bun
 bun run preview
 ```
+
+## Después de modificar el schema.ts
+
+Modificamos el schema (quizás habría que borrar algo en la BBDD) y ejecutamos:
+```npx drizzle-kit generate```
+
+Y luego
+```npx drizzle-kit migrate```
+
+
 ## Enlaces
 
 - [Objetivo del curso, hacer algo similar a este dashboard oficial de Nuxt UI, y nos basamos mucho en este código](https://github.com/nuxt-ui-templates/dashboard)
