@@ -4,6 +4,7 @@ Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduct
 
 
 Créditos: Curso de Vue de Bluuweb https://wwww.udemy.com/course/curso-vue 
+- [Objetivo del curso, hacer algo similar a este dashboard oficial de Nuxt UI, y nos basamos muchísimo en este código](https://github.com/nuxt-ui-templates/dashboard) Pero con posibilidad de registro y login real.
 
 ## Setup
 
@@ -76,9 +77,14 @@ bun run preview
 ```
 ## Enlaces
 
+- [Objetivo del curso, hacer algo similar a este dashboard oficial de Nuxt UI, y nos basamos mucho en este código](https://github.com/nuxt-ui-templates/dashboard)
 - [https://orm.drizzle.team/docs/tutorials/drizzle-with-neon](https://orm.drizzle.team/docs/tutorials/drizzle-with-neon). Aquí están los pasos iniciales seguidos.
 - [https://nuxt.com/modules/auth-utils](https://nuxt.com/modules/auth-utils), para rear la sesión del usuario, generando una cookie de sesión cifrada segura que se enviará al cliente, con lo que podemos crear rutas protegidas que solo los usuarios autenticados pueden acceder, verificando la sesión en cada solicitud
 - [https://zod.dev/](https://zod.dev/)
 
 - [NuxtUI Components](https://ui.nuxt.com/docs/components/app)
 - [NuxtUI Form](https://ui.nuxt.com/docs/components/form)
+- [NuxtUI Iconos](https://ui.nuxt.com/docs/getting-started/integrations/icons/nuxt)
+- [https://icones.js.org/](https://icones.js.org/)
+- [Extensión para ver iconos en VsCode: Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
+- [NuxtUI Sidebar](https://ui.nuxt.com/docs/components/dashboard-sidebar#usage)
