@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <UApp>
-    <NuxtPage />
-  </UApp>
+  <div>
+    <h1>Home Page</h1>
+  </div>
 </template>

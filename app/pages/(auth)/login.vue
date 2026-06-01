@@ -1,0 +1,67 @@
+<script setup lang="ts">
+import type { NuxtError } from "#app";
+import type { LoginTypeZodSchema } from "#shared/zod/login.schema";
+import { loginZodSchema } from "#shared/zod/login.schema";
+import type { AuthFormField, FormSubmitEvent } from "@nuxt/ui";
+
+const toast = useToast();
+
+const { fetch } = useUserSession();
+
+const fields: AuthFormField[] = [
+  {
+    name: "email",
+    type: "email",
+    label: "Email",
+    placeholder: "Enter your email",
+    required: true,
+    defaultValue: "test1@test.com",
+  },
+  {
+    name: "password",
+    label: "Password",
+    type: "password",
+    placeholder: "Enter your password",
+    required: true,
+  },
+];
+
+async function onSubmit(payload: FormSubmitEvent<LoginTypeZodSchema>) {
+  try {
+    await $fetch("/api/auth/login", {
+      method: "POST",
+      body: payload.data,
+    });
+    await fetch(); // Refrescar / Reobtener la sesión del usuario después de iniciar sesión
+    await navigateTo("/dashboard");
+    toast.add({
+      title: "Login Successful",
+      description: "You have been logged in successfully.",
+      color: "success",
+    });
+  } catch (error) {
+    const err = error as NuxtError;
+    toast.add({
+      title: "Login Error",
+      description: err.statusMessage || "An error occurred during login.",
+      color: "error",
+    });
+  }
+}
+</script>
+
+<template>
+  <!-- ui.nuxt.com/docs/components/form -->
+  <div class="flex flex-col items-center justify-center gap-4 p-4">
+    <UPageCard class="w-full max-w-md">
+      <UAuthForm
+        :schema="loginZodSchema"
+        title="Login"
+        description="Enter your credentials to access your account."
+        icon="i-lucide-user"
+        :fields="fields"
+        @submit="onSubmit"
+      />
+    </UPageCard>
+  </div>
+</template>
