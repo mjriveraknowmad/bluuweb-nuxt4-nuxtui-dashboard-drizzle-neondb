@@ -98,3 +98,5 @@ Y luego
 - [https://icones.js.org/](https://icones.js.org/)
 - [Extensión para ver iconos en VsCode: Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
 - [NuxtUI Sidebar](https://ui.nuxt.com/docs/components/dashboard-sidebar#usage)
+- [NuxtUI Modal](https://ui.nuxt.com/docs/components/modal)
+

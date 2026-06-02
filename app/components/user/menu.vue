@@ -9,13 +9,17 @@ const colorMode = useColorMode();
 
 const { clear } = useUserSession();
 
-const user = ref({
-  name: "Benjamin Canac",
-  avatar: {
-    src: "https://github.com/benjamincanac.png",
-    alt: "Benjamin Canac",
-  },
+const { data: userDB } = await useFetch("/api/user/profile", {
+  key: "user-profile",
 });
+
+const user = computed(() => ({
+  name: userDB.value?.username || "",
+  avatar: {
+    src: userDB.value?.avatarUrl || "/uploads/avatars/sin-avatar.jpg",
+    alt: userDB.value?.name || "",
+  },
+}));
 
 const items = computed<DropdownMenuItem[][]>(() => [
   [
