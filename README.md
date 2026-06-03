@@ -100,3 +100,6 @@ Y luego
 - [NuxtUI Sidebar](https://ui.nuxt.com/docs/components/dashboard-sidebar#usage)
 - [NuxtUI Modal](https://ui.nuxt.com/docs/components/modal)
 
+- [NuxtUI Chat](https://ui.nuxt.com/docs/components/chat#installation) Documentación sobre la instalación y uso de los componentes de chats con IA, usando el SDK de Vercel (En el curso de bluuweb se ve en https://www.udemy.com/course/curso-vue/learn/lecture/53938917)
+- [AI SDK de Vercel](https://ai-sdk.dev/docs/ai-sdk-core/generating-text) Documentación usada
+
