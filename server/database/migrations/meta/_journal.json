@@ -15,6 +15,13 @@
       "when": 1780311549089,
       "tag": "0001_uneven_centennial",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1780493081019,
+      "tag": "0002_funny_skaar",
+      "breakpoints": true
     }
   ]
 }
