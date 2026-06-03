@@ -5,22 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1779980470719,
-      "tag": "0000_smart_maria_hill",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1780311549089,
-      "tag": "0001_uneven_centennial",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1780493081019,
-      "tag": "0002_funny_skaar",
+      "when": 1765894205043,
+      "tag": "0000_shocking_prodigy",
       "breakpoints": true
     }
   ]

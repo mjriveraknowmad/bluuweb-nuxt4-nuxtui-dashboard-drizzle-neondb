@@ -14,9 +14,17 @@ CREATE TABLE "messages" (
 	"created_at" timestamp DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
-ALTER TABLE "posts_table" DISABLE ROW LEVEL SECURITY;--> statement-breakpoint
-DROP TABLE "posts_table" CASCADE;--> statement-breakpoint
-ALTER TABLE "users_table" ALTER COLUMN "id" SET DATA TYPE uuid;--> statement-breakpoint
-ALTER TABLE "users_table" ALTER COLUMN "id" SET DEFAULT gen_random_uuid();--> statement-breakpoint
+CREATE TABLE "users_table" (
+	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+	"name" text,
+	"email" text NOT NULL,
+	"password" varchar(255) NOT NULL,
+	"username" varchar(100) NOT NULL,
+	"bio" text,
+	"avatar_url" text,
+	CONSTRAINT "users_table_email_unique" UNIQUE("email"),
+	CONSTRAINT "users_table_username_unique" UNIQUE("username")
+);
+--> statement-breakpoint
 ALTER TABLE "chats" ADD CONSTRAINT "chats_user_id_users_table_id_fk" FOREIGN KEY ("user_id") REFERENCES "public"."users_table"("id") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
 ALTER TABLE "messages" ADD CONSTRAINT "messages_chat_id_chats_id_fk" FOREIGN KEY ("chat_id") REFERENCES "public"."chats"("id") ON DELETE cascade ON UPDATE no action;
