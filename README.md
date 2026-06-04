@@ -102,4 +102,6 @@ Y luego
 
 - [NuxtUI Chat](https://ui.nuxt.com/docs/components/chat#installation) Documentación sobre la instalación y uso de los componentes de chats con IA, usando el SDK de Vercel (En el curso de bluuweb se ve en https://www.udemy.com/course/curso-vue/learn/lecture/53938917)
 - [AI SDK de Vercel](https://ai-sdk.dev/docs/ai-sdk-core/generating-text) Documentación usada
+- [Repositorio fuente de inspiración, usada en algunos capítulos curso, de la parte del chat](https://github.com/nuxt-ui-templates/chat) /  [id.post del chat](https://github.com/nuxt-ui-templates/chat/blob/main/server/api/chats/%5Bid%5D.post.ts) / [StremText del AI SDK de Vercel](https://ai-sdk.dev/docs/reference/ai-sdk-core/stream-text)
+-  [Especificaciones con ejemplos del SDK](https://vercel.com/blog/ai-sdk-5) [enlace usado para la persistencia (writer)](https://ai-sdk.dev/v5/docs/ai-sdk-ui/chatbot-message-persistence#option-2-setting-ids-with-createuimessagestream)
 
